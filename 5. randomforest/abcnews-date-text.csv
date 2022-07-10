@@ -1,0 +1,231 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>A Million News Headlines | Kaggle</title>
+  <meta charset="utf-8" />
+    <meta name="robots" content="index, follow" />
+  <meta name="description" content="News headlines published over a period of 18 Years" />
+  <meta name="turbolinks-cache-control" content="no-cache" />
+    <meta name="keywords" content="news,text data,nlp,linguistics,australia" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta name="theme-color" content="#008ABC" />
+  <script nonce="Bw8UtmaXkoIT0O12C3h2FA==" type="text/javascript">
+    window["pageRequestStartTime"] = 1654537086443;
+    window["pageRequestEndTime"] = 1654537086546;
+    window["initialPageLoadStartTime"] = new Date().getTime();
+  </script>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="anonymous" /><link rel="preconnect" href="https://stats.g.doubleclick.net" /><link rel="preconnect" href="https://storage.googleapis.com" /><link rel="preconnect" href="https://apis.google.com" />
+  <link href="/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link rel="manifest" href="/static/json/manifest.json" crossorigin="use-credentials">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/icon?family=Google+Material+Icons"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/icon?family=Google+Material+Icons"
+    rel="stylesheet" media="print" id="async-google-font-1" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet" media="print" id="async-google-font-2" />
+  <script nonce="Bw8UtmaXkoIT0O12C3h2FA==" type="text/javascript">
+    const styleSheetIds = ["async-google-font-1", "async-google-font-2"];
+    styleSheetIds.forEach(function (id) {
+      document.getElementById(id).addEventListener("load", function() {
+        this.media = "all";
+      });
+    });
+  </script>
+
+    <link rel="canonical" href="/therohk/million-headlines" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/vendor.css?v=1f6d99669e949b7dfa2b" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/app.css?v=2e8679600fefe703804f" />
+  
+    
+ 
+      <script nonce="Bw8UtmaXkoIT0O12C3h2FA==">
+        try{(function(a,s,y,n,c,h,i,d,e){d=s.createElement("style");
+        d.appendChild(s.createTextNode(""));s.head.appendChild(d);d=d.sheet;
+        y=y.map(x => d.insertRule(x + "{ opacity: 0 !important }"));
+        h.start=1*new Date;h.end=i=function(){y.forEach(x => x<d.cssRules.length ? d.deleteRule(x) : {})};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document,['.site-header-react__nav'],'dataLayer',2000,{'GTM-52LNT9S':true});}catch(ex){}
+    </script>
+    <script nonce="Bw8UtmaXkoIT0O12C3h2FA==">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-12629138-1', {
+            'optimize_id': 'GTM-52LNT9S',
+            'displayFeaturesTask': null,
+            'send_page_view': false,
+            'content_group1': 'Datasets'
+        });
+    </script>
+    <script nonce="Bw8UtmaXkoIT0O12C3h2FA==" async src="https://www.googletagmanager.com/gtag/js?id=UA-12629138-1"></script>
+
+  
+    
+    <meta property="og:url" content="/therohk/million-headlines" />
+    <meta property="og:title" content="A Million News Headlines" />
+    <meta property="og:description" content="News headlines published over a period of 18 Years" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://storage.googleapis.com/kaggle-datasets-images/1692/243808/e46231df07274e237f8cdd9daece2a79/dataset-card.jpg?t=2019-06-13-16-20-05" />
+    <meta property="fb:app_id" content="2665027677054710" />
+
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@kaggledatasets" />
+
+
+  <meta name="twitter:site" content="@Kaggle" /> 
+  
+    
+    <script nonce="Bw8UtmaXkoIT0O12C3h2FA==" type="application/ld+json">{"@context":"http://schema.org/","@type":"Dataset","name":"A Million News Headlines","description":"### Context\n\nThis contains data of news headlines published over a period of eighteen years.\n\nSourced from the reputable Australian news source ABC (Australian Broadcasting Corporation)\n\nAgency Site: (http://www.abc.net.au)\n\n### Content\n\nFormat: CSV ; Single File\n\n 1. **publish_date**: Date of publishing for the article in yyyyMMdd format\n 2. **headline_text**: Text of the headline in Ascii , English , lowercase\n\nStart Date: **2003-02-19** ; End Date: **2020-12-31**\n\n### Inspiration\n\nI look at this news dataset as a summarised historical record of noteworthy events in the globe from early-2003 to end-2020 with a more granular focus on Australia.\n\nThis includes the entire corpus of articles published by the abcnews website in the given date range. \nWith a volume of two hundred articles per day and a good focus on international news, we can be fairly certain that every event of significance has been captured here.\n\nDigging into the keywords, one can see all the important episodes shaping the last decade and how they evolved over time.\nEx: afghanistan war, financial crisis, multiple elections, ecological disasters, terrorism, famous people, criminal activity et cetera.\n\n### Similar Work\n\nSimilar news datasets exploring other attributes, countries and topics can be seen on my [profile](/therohk). \n\nYour kernals can be reused with minimal changes across all these datasets.\n\nPrepared by **Rohit Kulkarni**\n","url":"https://www.kaggle.com/therohk/million-headlines","version":4,"keywords":["subject, people and society, news","data type, text data","analysis, nlp","subject, people and society, social science, linguistics","geography and places, oceania, australia"],"license":{"@type":"CreativeWork","name":"CC0: Public Domain","url":"https://creativecommons.org/publicdomain/zero/1.0/"},"identifier":["1692"],"includedInDataCatalog":{"@type":"DataCatalog","name":"Kaggle","url":"https://www.kaggle.com"},"creator":{"@type":"Person","name":"Rohit Kulkarni","url":"https://www.kaggle.com/therohk","image":"https://storage.googleapis.com/kaggle-avatars/thumbnails/1150494-kg.png"},"distribution":[{"@type":"DataDownload","requiresSubscription":true,"encodingFormat":"zip","fileFormat":"zip","contentUrl":"https://www.kaggle.com/datasets/therohk/million-headlines/download","contentSize":"22082559 bytes"}],"commentCount":7,"dateModified":"2021-01-23T22:40:33.523Z","discussionUrl":"https://www.kaggle.com/therohk/million-headlines/discussion","alternateName":"News headlines published over a period of 18 Years","isAccessibleForFree":true,"thumbnailUrl":"https://storage.googleapis.com/kaggle-datasets-images/1692/243808/e46231df07274e237f8cdd9daece2a79/dataset-card.jpg?t=2019-06-13-16-20-05","interactionStatistic":[{"@type":"InteractionCounter","interactionType":"http://schema.org/CommentAction","userInteractionCount":7},{"@type":"InteractionCounter","interactionType":"http://schema.org/DownloadAction","userInteractionCount":32278},{"@type":"InteractionCounter","interactionType":"http://schema.org/ViewAction","userInteractionCount":205911},{"@type":"InteractionCounter","interactionType":"http://schema.org/LikeAction","userInteractionCount":599}]}</script>
+
+
+  
+    
+
+  
+    
+    
+<script nonce="Bw8UtmaXkoIT0O12C3h2FA==" type="text/javascript">
+    var Kaggle = window.Kaggle || {};
+
+    Kaggle.Current = {
+        antiForgeryToken: 'CfDJ8GeXgbEwE85OtAFpY1z4yyUgqjcQca9SNsWAJt1QIFle6I3LckX_kjXiAu6HuVQF4iS0vJWt5QvpuXoRw1EZXxHGU6nHL0o5uXs-qpfpWB3MeA',
+        isAnonymous: true,
+        analyticsToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTQ1Mzc5ODYsIlVzZXJJZCI6MH0.Ax0YjZV5231bQUEggX8-4fHJz-c1p_Vf3dNEkVej0SE',
+        analyticsTokenExpiry: 15,
+        
+        
+        
+        
+        
+        
+        
+        enableRapidash: true, 
+        
+    }
+        Kaggle.Current.log = function(){};
+        Kaggle.Current.warn = function(){};
+
+    const decodeUserProperty = function (escapedUserProperty) {
+        escapedUserProperty = escapedUserProperty || "";
+        try {
+            const textVersion = new DOMParser().parseFromString(escapedUserProperty, "text/html").documentElement.textContent;
+            if (textVersion) {
+                return textVersion;
+            }
+        } catch(ex) {}
+        return escapedUserProperty;
+    }
+    Kaggle.Current.userDisplayName = decodeUserProperty(Kaggle.Current.userDisplayNameEscaped);
+    Kaggle.Current.userEmail = decodeUserProperty(Kaggle.Current.userEmailEscaped); 
+</script>
+
+    
+
+<script nonce="Bw8UtmaXkoIT0O12C3h2FA==" type="text/javascript">
+    var Kaggle = window.Kaggle || {};
+    Kaggle.PageMessages = [];
+</script>
+
+
+
+    <script nonce="Bw8UtmaXkoIT0O12C3h2FA==">window['useKaggleAnalytics'] = true;</script>
+
+  <script id="gapi-target" nonce="Bw8UtmaXkoIT0O12C3h2FA==" src="https://apis.google.com/js/api.js" defer
+    async></script>
+  <script nonce="Bw8UtmaXkoIT0O12C3h2FA==" src="/static/assets/runtime.js?v=658d5b8797805ba446be" data-turbolinks-track="reload"></script>
+  <script nonce="Bw8UtmaXkoIT0O12C3h2FA==" src="/static/assets/vendor.js?v=a2004e5f19533473e100" data-turbolinks-track="reload"></script>
+  <script nonce="Bw8UtmaXkoIT0O12C3h2FA==" src="/static/assets/app.js?v=8c6457bbe724d0e8c0a2" data-turbolinks-track="reload"></script>
+    <script nonce="Bw8UtmaXkoIT0O12C3h2FA==" type="text/javascript">
+      window.kaggleStackdriverConfig = {
+        key: 'AIzaSyA4eNqUdRRskJsCZWVz-qL655Xa5JEMreE',
+        projectId: 'kaggle-161607',
+        service: 'web-fe',
+        version: 'ci',
+        userId: '0'
+      }
+    </script>
+</head>
+
+<body data-turbolinks="false">
+  <main>
+    
+
+
+
+
+
+
+<div id="site-container"></div>
+<div data-component-name="NavigationContainer" style="display: flex; flex-direction: column; flex: 1 0 auto;"></div><script class="kaggle-component" nonce="Bw8UtmaXkoIT0O12C3h2FA==">var Kaggle=window.Kaggle||{};Kaggle.State=Kaggle.State||[];Kaggle.State.push({"navigationType":"BOTH_NAV"});performance && performance.mark && performance.mark("NavigationContainer.componentCouldBootstrap");</script>
+<div id="site-body" class="hide">
+    
+
+<div data-component-name="DatasetMaterialContainer" style="display: flex; flex-direction: column; flex: 1 0 auto;"></div><script class="kaggle-component" nonce="Bw8UtmaXkoIT0O12C3h2FA==">var Kaggle=window.Kaggle||{};Kaggle.State=Kaggle.State||[];Kaggle.State.push({"basics":{"datasetId":1692,"slug":"million-headlines","title":"A Million News Headlines","description":"### Context\n\nThis contains data of news headlines published over a period of eighteen years.\n\nSourced from the reputable Australian news source ABC (Australian Broadcasting Corporation)\n\nAgency Site: (http://www.abc.net.au)\n\n### Content\n\nFormat: CSV ; Single File\n\n 1. **publish_date**: Date of publishing for the article in yyyyMMdd format\n 2. **headline_text**: Text of the headline in Ascii , English , lowercase\n\nStart Date: **2003-02-19** ; End Date: **2020-12-31**\n\n### Inspiration\n\nI look at this news dataset as a summarised historical record of noteworthy events in the globe from early-2003 to end-2020 with a more granular focus on Australia.\n\nThis includes the entire corpus of articles published by the abcnews website in the given date range. \nWith a volume of two hundred articles per day and a good focus on international news, we can be fairly certain that every event of significance has been captured here.\n\nDigging into the keywords, one can see all the important episodes shaping the last decade and how they evolved over time.\nEx: afghanistan war, financial crisis, multiple elections, ecological disasters, terrorism, famous people, criminal activity et cetera.\n\n### Similar Work\n\nSimilar news datasets exploring other attributes, countries and topics can be seen on my [profile](/therohk). \n\nYour kernals can be reused with minimal changes across all these datasets.\n\nPrepared by **Rohit Kulkarni**\n","viewCount":205911,"downloadCount":32278,"scriptCount":80,"topicCount":7,"owner":{"id":1150494,"imageUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/1150494-kg.png","name":"Rohit Kulkarni","profileUrl":"/therohk","slug":"therohk","userTier":"EXPERT"},"license":{"id":1,"name":"CC0: Public Domain","url":"https://creativecommons.org/publicdomain/zero/1.0/"},"overview":"News headlines published over a period of 18 Years","collaboratorList":{"owner":{"userId":1150494,"profileUrl":"/therohk","thumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/1150494-kg.png","name":"Rohit Kulkarni","slug":"therohk","userTier":"EXPERT","type":"OWNER"}},"coverImageUrl":"https://storage.googleapis.com/kaggle-datasets-images/1692/243808/e46231df07274e237f8cdd9daece2a79/dataset-cover.jpg?t=2019-06-13-16-20-05","data":{"totalSize":22082559,"isFileset":true,"canSeeDownload":true,"firestorePath":"LWoLc7PNFYIS44SuJcGi/versions/tYJ0pisWWHzGWm89xYrb","downloadUrl":"/datasets/therohk/therohk/download?datasetVersionNumber=4","versionId":1910765,"id":1692},"voteCount":599,"medalUrl":"/static/images/medals/datasets/goldl@2x.png","downloadUrl":"/datasets/therohk/million-headlines/download","lastUpdateTime":"2021-01-23T22:40:33.523Z","datasetVersionNumber":4,"creatorDisplayName":"Rohit Kulkarni","cardImageUrl":"https://storage.googleapis.com/kaggle-datasets-images/1692/243808/e46231df07274e237f8cdd9daece2a79/dataset-card.jpg?t=2019-06-13-16-20-05","categories":{"tags":[{"id":16430,"name":"news","fullPath":"subject \u003E people and society \u003E news","listingUrl":"/datasets?group=public\u0026tagids=16430","description":"","datasetCount":4774,"competitionCount":1,"notebookCount":3020,"tagUrl":"/tags/news","displayName":"News"},{"id":14104,"name":"text data","fullPath":"data type \u003E text data","listingUrl":"/datasets?group=public\u0026tagids=14104","description":"","datasetCount":2724,"competitionCount":45,"notebookCount":2710,"tagUrl":"/tags/text-data","displayName":"Text Data"},{"id":13204,"name":"nlp","fullPath":"analysis \u003E nlp","listingUrl":"/datasets?group=public\u0026tagids=13204","description":"Natural Language Processing gives a computer program the ability to extract meaning human language. Applications include sentiment analysis, translation, and speech recognition.","datasetCount":2078,"competitionCount":12,"notebookCount":5848,"tagUrl":"/tags/nlp","displayName":"NLP"},{"id":11208,"name":"linguistics","fullPath":"subject \u003E people and society \u003E social science \u003E linguistics","listingUrl":"/datasets?group=public\u0026tagids=11208","description":"The linguistics tag contains datasets and kernels that you can use for text analytics, sentiment analyses, and making clever jokes like this: Let me tell you a little about myself. It\u0027s a reflexive pronoun that means \u0022me.\u0022","datasetCount":636,"competitionCount":6,"notebookCount":160,"tagUrl":"/tags/linguistics","displayName":"Linguistics","fontAwesomeIcon":"language"},{"id":3500,"name":"australia","fullPath":"geography and places \u003E oceania \u003E australia","listingUrl":"/datasets?group=public\u0026tagids=3500","description":"This tag contains information on Australia: AKA the smallest continent, the land down under, Oz, Terra Australis or Straya.","datasetCount":104,"notebookCount":55,"tagUrl":"/tags/australia","displayName":"Australia"}]},"datasetExternalUrl":"https://www.kaggle.com/datasets/therohk/million-headlines","forumId":5000,"datasetVersionId":1872729,"canCreateTasks":true,"moderationStatus":"PRIVATED_MODERATION_STATUS_NO_ABUSE","lastVersionNumber":4,"diffType":"UNVERSIONED"},"@wf": "Datasets.DatasetMaterialDtoWireFormat3"});performance && performance.mark && performance.mark("DatasetMaterialContainer.componentCouldBootstrap");</script>
+<script nonce="Bw8UtmaXkoIT0O12C3h2FA==" type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    "HTML-CSS": {
+    preferredFont: "TeX",
+    availableFonts: ["STIX", "TeX"],
+    linebreaks: {
+    automatic: true
+    },
+    EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+    inlineMath: [["\\(", "\\)"], ["\\\\(", "\\\\)"]],
+    displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+    processEscapes: true,
+    ignoreClass: "tex2jax_ignore|dno"
+    },
+    TeX: {
+    noUndefined: {
+    attributes: {
+    mathcolor: "red",
+    mathbackground: "#FFEEEE",
+    mathsize: "90%"
+    }
+    }
+    },
+    Macros: {
+    href: "{}"
+    },
+    skipStartupTypeset: true,
+    messageStyle: "none",
+    extensions: [],
+    });
+</script>
+<script type="text/javascript" nonce="Bw8UtmaXkoIT0O12C3h2FA==">
+  window.addEventListener("DOMContentLoaded", () => {
+    const head = document.getElementsByTagName("head")[0];
+    const useProdHosts = ["www.kaggle.com", "admin.kaggle.com"];
+    const subdomain = useProdHosts.includes(window.location.hostname) ? "www" : "staging";
+
+    const lib = document.createElement("script");
+    lib.type = "text/javascript";
+    lib.src = `https://${subdomain}.kaggleusercontent.com/static/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML`;
+    head.appendChild(lib);
+  });
+</script>
+
+
+
+
+
+</div>
+
+
+
+
+  </main>
+</body>
+
+</html>
