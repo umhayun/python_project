@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="{{ url_for('static', filename='css/drive.css') }}" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <title>{% block title %}{% endblock %}</title>
+  <script src="{{ url_for('static', filename='js/event.js') }}" defer> </script>
+</head>
+<body>
+
+  <div class="wrapper">
+    <a href="/"><img class="logo" src="{{ url_for('static', filename='img/main_logo.png') }}"/></a>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="navbar_logo">
+        <a class="font1" href="/"><b>Somewhere</b></a>
+      </div>
+      <ul class="navbar_menu">
+          <li><a href="map/all">세계지도</a></li>
+          <li><a href="keyword">키워드</a></li>
+          <li><a href="marker">맵마커</a></li>
+          <li><a href="drive">드라이브</a></li>
+      </ul>
+      <ul class="navbar_icon">
+        <a href="/"><img class="navbar_icon_img" src="{{ url_for('static', filename='img/logo.png') }}"/></a>
+        <a href="#"><img class="navbar_toggleBtn_img" src="{{ url_for('static', filename='img/menu_bar.png') }}"/></a>
+      </ul>
+    </nav>
+
+    <!-- container-->
+    <div class="container">
+      {% block content%} {% endblock %}
+    
+    
+    </div>
+    <!-- footer -->
+    <div class="footer">
+      <ul>
+        <li><a href="#">사이트 도움말</a></li>
+        <li><a href="#">사이트 이용약관</a></li>
+        <li><a href="#">개인정보취급방침</a></li>
+        <li><a href="#">고객센터</a></li>
+      </ul>
+      <address>
+        Copyright&copy;
+        UsefulTravel
+        All Rights Reserved.
+      </address>
+    </div>
+  </div>
+</body>
+</html>

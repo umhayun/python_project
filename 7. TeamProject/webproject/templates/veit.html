@@ -1,0 +1,71 @@
+{% include "header.html" %}
+<style>
+    .container {
+        padding: 0;
+        background-color: rgba(172, 200, 204, 0.481);
+        display: inline-block;
+        padding-top: 130px;
+        padding-bottom: 30px;
+        margin: 0;
+    }
+    h2 {
+      color: #000;
+      text-shadow: 2px 2px 2px #999;
+  }
+    .cn,
+    .jp,
+    .us,
+    .ta,
+    .ve {
+        width: 90px;
+        height: 60px;
+        margin: 0 20px;
+    }
+    .cn:hover,
+    .jp:hover,
+    .us:hover,
+    .ta:hover,
+    .ve:hover {
+      transform: scale( 2.0, 2.0 );
+      transition: 1s;
+    }
+    .nation {
+        width: 100%;
+        margin: 0 auto;
+        position: absolute;
+        top: 150px;
+    }
+    .ve_info {
+        margin: 0 auto;
+        padding: 0;
+        height: 440px;
+    }
+    .bg_ve {
+        width: 600px;
+        height: 440px;
+        display: inline-block;
+        margin-right: 20px;
+    }
+    .ve_keyword {
+        height: 440px;
+        display: inline-block;
+        margin-left: 20px;
+    }
+</style>
+<div class="container">
+  <br>  
+  <h2>SNS 키워드로 알아보는 베트남</h2>
+  <br>
+  <div class="nation">
+    <a href="/china"><img class="cn" src="{{url_for('static', filename = '/img/CN.PNG')}}"></a>
+    <a href="/japan"><img class="jp" src="{{url_for('static', filename = '/img/JP.PNG')}}"></a>
+    <a href="/usa"><img class="us" src="{{url_for('static', filename = '/img/US.PNG')}}"></a>
+    <a href="/tai"><img class="ta" src="{{url_for('static', filename = '/img/TA.PNG')}}"></a>
+  </div>
+  <br>
+  <div class="ve_info">
+    <img class="bg_ve" src= "{{url_for('static', filename='/img/bg_ve.webp')}}"/>
+    <img class="ve_keyword" src="{{url_for('static', filename = '/img/veit_2.png')}}">
+  </div>
+</div>
+{% include "footer.html" %}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <style>
+    .level{
+      width:24%;
+      height: 100%;
+      float: left;
+      text-align: center;
+      align-item: center;
+      justify-content : center;
+    }
+    .level:nth-child(n+2){
+      border-left: 1px solid #000;
+      
+    }
+    .level:hover{
+      background-color: rgba(206, 204, 204, 0.49);
+    }
+    .w{
+      height: 100%;
+      margin:auto;
+      text-align: center;
+    }
+    .container {
+      height: 40px;
+    } 
+
+  </style>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="{{ url_for('static', filename='css/map.css') }}" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <title>세계지도</title>
+  <script src="{{ url_for('static', filename='js/event.js') }}" defer> </script>
+</head>
+<body>
+
+  <div class="wrapper">
+    <a href="/"><img class="logo" src="{{ url_for('static', filename='img/main_logo.png') }}"/></a>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="navbar_logo">
+        <a class="font1" href="/"><b>Somewhere</b></a>
+      </div>
+      <ul class="navbar_menu">
+        <li><a href="/map/all">세계지도</a></li>
+        <li><a href="/keyword">키워드</a></li>
+        <li><a href="/marker">맵마커</a></li>
+        <li><a href="/drive">드라이브</a></li>
+      </ul>
+      <ul class="navbar_icon">
+        <a href="/"><img class="navbar_icon_img" src="{{ url_for('static', filename='img/logo.png') }}"/></a>
+        <a href="#"><img class="navbar_toggleBtn_img" src="{{ url_for('static', filename='img/menu_bar.png') }}"/></a>
+      </ul>
+    </nav>
+
+
+    <!-- container-->
+
+  <div class="container">
+    
+      <ul class="w">
+      <li class="level">
+      <input style="display:none;width: 0px;height: 0px;" onclick="location.href='/map/all'" type="button" id="<img-style='width: 13px;height: 13px;'-src='../static/img/img1.png'-alt='전체'> 전체" >
+      <label for="<img-style='width: 13px;height: 13px;'-src='../static/img/img1.png'-alt='전체'> 전체">
+        <img style="width: 13px;height: 13px;" src="../static/img/img1.png" alt="전체"> 전체
+        </label>
+      </li>
+      <li class="level">
+      <input style="display:none;width: 0px;height: 0px;" onclick="location.href='/map/attention'" type="button" id="<img-style='width: 13px;height: 13px;'-src='../static/img/img2.png'-alt='1단계'> 1단계" >
+      <label for="<img-style='width: 13px;height: 13px;'-src='../static/img/img2.png'-alt='1단계'> 1단계" >
+        <img style="width: 13px;height: 13px;" src="../static/img/img2.png" alt="1단계"> 1단계
+      </label>
+      </li>
+      <li class="level">
+      <input style="display:none;width: 0px;height: 0px;" onclick="location.href='/map/control'" type="button" id="<img-style='width: 13px;height: 13px;'-src='../static/img/img3.png'-alt='2단계'> 2단계" >
+      <label for="<img-style='width: 13px;height: 13px;'-src='../static/img/img3.png'-alt='2단계'> 2단계" >
+        <img style="width: 13px;height: 13px;" src="../static/img/img3.png" alt="2단계"> 2단계
+      </label>
+      </li>
+      <li class="level">
+      <input style="display:none;width: 0px;height: 0px;" onclick="location.href='/map/special'" type="button" id="<img-style='width: 13px;height: 13px;'-src='../static/img/img4.png'-alt='특별단계'> 특별단계" >
+      <label for="<img-style='width: 13px;height: 13px;'-src='../static/img/img4.png'-alt='특별단계'> 특별단계" >
+        <img style="width: 13px;height: 13px;" src="../static/img/img4.png" alt="특별단계"> 특별단계
+      </label>
+      </li>
+    </ul>
+    <br>
+  </div>  
+    {% include alarm %}
+  </div>
+
+   
+     
+
+    <!-- footer -->
+    <div class="footer">
+      <ul>
+        <li><a href="#">사이트 도움말</a></li>
+        <li><a href="#">사이트 이용약관</a></li>
+        <li><a href="#">개인정보취급방침</a></li>
+        <li><a href="#">고객센터</a></li>
+      </ul>
+      <address>
+        Copyright&copy;
+        UsefulTravel
+        All Rights Reserved.
+      </address>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+{% include "header.html" %}
+<style>
+  .container {
+    position: relative;
+    text-align: center;
+    display: flex;
+    background-color: rgba(172, 200, 204, 0.481);
+    margin: 0 auto;
+    width: 100%;
+    padding: 50px;
+    justify-content: center;
+}
+  .content {
+    padding: 0;
+    margin: auto 0;
+  }
+  .text {
+    font-size: 40px;
+    font-weight: 1000;
+    color: #fff;
+    text-shadow: 2px 2px 1px #000;
+  }
+  .text2 {
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+  }
+  .cn,
+  .jp,
+  .us,
+  .ta,
+  .ve {
+      width: 90px;
+      height: 60px;
+      margin: 0 20px;
+  }
+  .cn:hover,
+  .jp:hover,
+  .us:hover,
+  .ta:hover,
+  .ve:hover {
+    transform: scale( 2.0, 2.0 );
+    transition: 1s;
+  }
+</style>
+<div class="container">
+  <div class="content">
+        <p class="text">SNS로 알아보는 추천 여행지 TOP5</p>
+        <br><br>
+        <form method="POST">
+          <input type="text" name="get_search">
+          <button type="submit" class="btn">검색</button>
+        </form>
+        <br>
+        <p class="text2">아래 나라를 검색하거나 클릭하세요</p>
+        <br>
+        <br>
+        <div class="nation">
+          <a href="/china"><img class="cn" src="{{url_for('static', filename = '/img/CN.PNG')}}"></a>
+          <a href="/japan"><img class="jp" src="{{url_for('static', filename = '/img/JP.PNG')}}"></a>
+          <a href="/usa"><img class="us" src="{{url_for('static', filename = '/img/US.PNG')}}"></a>
+          <a href="/tai"><img class="ta" src="{{url_for('static', filename = '/img/TA.PNG')}}"></a>
+          <a href="/veit"><img class="ve" src="{{url_for('static', filename = '/img/VE.PNG')}}"></a>
+        </div>
+      </div>
+</div>
+{% include "footer.html" %}     

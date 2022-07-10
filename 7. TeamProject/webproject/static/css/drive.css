@@ -1,0 +1,246 @@
+html, body {
+    margin: 0;
+    background-color: #999;
+    font-family: 'Gowun Dodum', sans-serif;
+    height: 100%;
+    background-color: #fff;
+}
+ul {
+    list-style: none;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #000;
+    transition: 0.7s;
+}
+a:hover {
+    opacity: 0.5;
+}
+h1, h2, h3, p {
+    margin: 0;
+}
+
+/* scroll-bar */
+body::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+body::-webkit-scrollbar-thumb {
+    height: 10%;
+    background: rgba(163, 178, 193, 0.745);
+    border-radius: 100px;
+}
+body::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+/* font */
+.font1 {
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    text-shadow: 5px 5px 5px #000;
+}
+.font2 {
+    font-family: 'Gowun Dodum', sans-serif;
+    margin-left: 30px;
+}
+/* wrapper */
+.wrapper {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+/* navbar */
+.navbar {
+ background-color: rgba(163, 178, 193, 0.745);
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 10px 12px; 
+}
+
+/* navbar_logo */
+.logo {
+    width: 35px;
+    position: absolute;
+    top: 0;
+    margin: 26px 14px;
+}
+.navbar_logo a{
+    color: #fff;
+    padding: 8px 40px;
+}
+
+/* navbar_menu */
+.navbar_menu {
+    position: relative;
+    right: 120px;
+    display: flex;
+    list-style: none;
+}
+.navbar_menu li {
+    padding: 8px 20px;
+    margin-left: 100px;
+}
+.navbar_menu li:hover {
+    background-color: rgba(35, 42, 48, 0.155);
+    border-radius: 7px;
+}
+.navbar_menu a{
+    color: #fff;
+    font-weight: 1000;
+}
+
+/* navbar_icon */
+.navbar_icon_img {
+    width: 50px;
+    padding: 8px 30px;
+    display: flex;
+    padding-left: 0;
+}
+
+/* navbar_toggleBtn */
+.navbar_toggleBtn_img {
+    display: none;
+    position: absolute;
+    right: 30px;
+    top: 18px;
+    width: 40px;
+}
+
+/* navbar 반응형 */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 30px;
+    }
+    .navbar_logo {
+        margin-bottom: 8px;
+    }
+    .logo {
+        top: -15px;
+        left: 18px;
+    }
+    .navbar_menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .navbar_menu li {
+        width: 400px;
+        text-align: center;
+        margin-left: 160px;
+    }
+    .navbar_icon_img {
+        display: none;
+    }
+    .navbar_toggleBtn_img {
+        display: block;
+        top: 10px;
+    }
+    .navbar_menu.active,
+    .navbar_icon_img.active {
+        display: flex;
+    }
+    .navbar_menu.active ul {
+        text-align: center;
+    }
+}
+
+/* container @@@@@@@@@@@@@@@ 여기에 작업 @@@@@@@@@@@@@@@ */
+.container {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+/* video UI */
+.panel {
+    width: 225px;
+    height: 100%;
+    position: relative;
+    right: 0;
+    display: inline-block;
+    padding-left: 23px;
+    padding-right: 23px;
+    background-color: rgba(163, 178, 193, 0.601);
+    overflow: scroll;
+  }
+  h1{
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 3px #000;
+    font-size: 28px;
+  }  
+  .panel ul {
+    padding: 0;
+    position: relative;
+    justify-content: center;
+  }
+  .panel li {
+    text-align: center;
+    line-height: 2.5;
+  }
+  .panel a {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 1px #000;
+  }
+  #nation_link:hover{
+    border: 1px solid rgba(175, 174, 174, 0.277);
+    border-color: rgba(175, 174, 174, 0.277);
+    border-style: double;
+    padding: 0 3px;
+    background: rgba(0, 0, 0, 0.448);
+    color: rgba(79, 74, 74, 0.486);
+    cursor: pointer;
+    border-radius: 15px;
+  }
+
+/* footer */
+.footer {
+    background-color: rgba(163, 178, 193, 0.745);
+    color: #fff;
+    text-align: center;
+    padding: 10px 50px;
+    position: relative;
+    font-weight: 1000;
+    font-size: 15px;    
+}
+.footer ul {
+    padding-left: 0;
+}
+.footer li {
+    position: relative;
+    display: inline;
+    padding: 0 7px 0 10px;
+    white-space: nowrap;
+}
+.footer li a {
+    font-size: 14px;
+    color: #fff;
+}
+.footer li::before {
+    content: '';
+    width: 2px;
+    height: 15px;
+    background-color: rgba(255, 255, 255, 0.501);
+    position: absolute;
+    left: 0;
+    top: 5.5px;
+}
+.footer li:first-child:before {
+    width: 0;
+}
+address {
+    padding-top: 7px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 1000;
+    color:#000;
+}

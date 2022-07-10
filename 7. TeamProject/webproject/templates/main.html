@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@900&display=swap" rel="stylesheet">
+  <title>Somewhere</title>
+  <script src="{{ url_for('static', filename='js/event.js') }}" defer> </script>
+</head>
+<body>
+  <div class="wrapper">
+    <div class ="video">
+      <video src="{{ url_for('static', filename='video/main.mp4') }}" autoplay muted loop></video>
+    </div>
+    <a href="/"><img class="logo" src="{{ url_for('static', filename='img/main_logo.png') }}"/></a>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="navbar_logo">
+        <a class="font1" href="/"><b>Somewhere</b></a>
+      </div>
+      <ul class="navbar_menu">
+        <li><a href="map/all">세계지도</a></li>
+        <li><a href="keyword">키워드</a></li>
+        <li><a href="marker">맵마커</a></li>
+        <li><a href="drive">드라이브</a></li>
+      </ul>
+      <ul class="navbar_icon">
+        <a href="/"><img class="navbar_icon_img" src="{{ url_for('static', filename='img/logo2.png') }}" /></a>
+        <a href="#"><img class="navbar_toggleBtn_img" src="{{ url_for('static', filename='img/menu_bar2.png') }}"/></a>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="submit" OnClick="location.href ='map/all'" style="cursor:pointer;" >
+        <h1>Somewhere</h1>
+        <a>
+          <br>
+          <b>
+            청춘은 여행이다.
+            <br>찢어진 주머니에 두 손을 내리꽂은 채
+            <br>그저 길을 떠나도 좋은 것이다.
+          </b>
+        </a>
+      </div> 
+    </div>
+    <a href="#"><img class="instagram_icon" src="{{ url_for('static', filename='img/instagram_icon.png') }}"/></a>
+    <a class="instagram" href="https://www.instagram.com/loveen_bb" target="_blank">INSTAGRAM</a>
+  </div>
+</body>
+</html>
